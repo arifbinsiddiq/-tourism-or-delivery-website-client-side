@@ -26,7 +26,7 @@ const TopSpots = () => {
             <Row xs={1} sm={1} md={1} lg={2} className="g-4">
                 {
                     topSpots?.map(topSpot =>
-                        { !loading && <Col
+                         <Col
                             key={topSpot?._id}
                         >
                             <Card>
@@ -45,7 +45,6 @@ const TopSpots = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        }
                     )
                 }
 
