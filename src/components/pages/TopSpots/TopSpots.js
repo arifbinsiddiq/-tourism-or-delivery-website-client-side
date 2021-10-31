@@ -7,12 +7,17 @@ import './TopSpots.css';
 
 const TopSpots = () => {
 
+    const [loading, setLoading] = useState(false);
+
     const [ topSpots, setTopSpots ] = useState([]);
 
     useEffect(() => {
         fetch("https://dark-dracula-64114.herokuapp.com/tourorders")
             .then(res => res.json())
-            .then(data => setTopSpots(data))
+            .then(data => {
+                setLoading(true);
+                setTopSpots(data)
+            })
     }, [])
 
     return (
@@ -21,7 +26,7 @@ const TopSpots = () => {
             <Row xs={1} sm={1} md={1} lg={2} className="g-4">
                 {
                     topSpots?.map(topSpot =>
-                        <Col
+                        { !loading && <Col
                             key={topSpot?._id}
                         >
                             <Card>
@@ -40,6 +45,7 @@ const TopSpots = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
+                        }
                     )
                 }
 
