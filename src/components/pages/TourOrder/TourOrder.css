@@ -1,0 +1,52 @@
+.tour-details-section{
+    margin: 100px auto;
+}
+
+.tour-details h2{
+    font-size: 48px;
+    font-weight: 500;
+    color: #00BDBB;
+    margin-bottom: 30px;
+}
+
+.tour-details-img{
+    width: 100%;
+    height: 100%;
+}
+
+.tour-details-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.booking-form h2{
+    font-size: 48px;
+    font-weight: 500;
+    color: #00BDBB;
+    margin-bottom: 30px;
+}
+
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form form input{
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 15px;
+    
+}
+
+.booking-order-btn{
+    background-color: #00BDBB;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
