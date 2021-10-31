@@ -2,7 +2,6 @@
 
 Please Visit My Client Site Link [Link](................).
 
-Please Visit My Server Site Link [Link](................).
 
 
 ### About Site
@@ -10,7 +9,7 @@ Please Visit My Server Site Link [Link](................).
 # My Pages 
 **Home**
 **Tourist Guide Line**
-**Add Tour**
+**Top Tourist Spot**
 
 
 ### `Site Features`
